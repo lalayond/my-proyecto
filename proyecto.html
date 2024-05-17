@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Completa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background: #f0f0f0;
+    }
+    
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    header {
+        background: linear-gradient(90deg, #007BFF, #00C6FF);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    
+    header nav {
+        margin-top: 10px;
+    }
+    
+    header nav ul {
+        padding: 0;
+        list-style: none;
+    }
+    
+    header nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: color 0.3s;
+    }
+    
+    header nav ul li a:hover {
+        color: #ffd700;
+    }
+    
+    section {
+        padding: 60px 0;
+        text-align: center;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+    }
+    
+    section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    section p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    
+    .light-bg {
+        background: #f4f4f4;
+    }
+    
+    .services-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .services-list li {
+        font-size: 1.2em;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .services-list li i {
+        color: #007BFF;
+        margin-right: 10px;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .gallery img {
+        width: calc(25% - 10px);
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    form label {
+        font-weight: bold;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    form input[type="submit"] {
+        padding: 10px;
+        border: none;
+        background: #007BFF;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background 0.3s;
+    }
+    
+    form input[type="submit"]:hover {
+        background: #0056b3;
+    }
+    
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    
+    footer ul {
+        padding: 0;
+        list-style: none;
+    }
+    
+    footer ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    footer ul li a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    footer ul li a:hover {
+        color: #ffd700;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
+
+
+
+
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Bienvenido a Mi Página Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            <h2>Inicio</h2>
+            <p>Bienvenido a nuestro sitio web. Aquí encontrarás toda la información que necesitas.</p>
+        </div>
+    </section>
+    
+    <section id="about" class="light-bg">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa dedicada a ofrecer los mejores servicios a nuestros clientes.</p>
+        </div>
+    </section>
+    
+    <section id="services">
+        <div class="container">
+            <h2>Servicios</h2>
+            <ul class="services-list">
+                <li><i class="fas fa-cog"></i> Servicio 1</li>
+                <li><i class="fas fa-heart"></i> Servicio 2</li>
+                <li><i class="fas fa-star"></i> Servicio 3</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="gallery" class="light-bg">
+        <div class="container">
+            <h2>Galería</h2>
+               <div class="gallery"> <img src="https://navarweb.es/wp-content/uploads/ordenadores-todo-en-uno-all-in-one.jpg" alt="Imagen 1"> <img src="https://th.bing.com/th/id/R.66a41bbc82f1e3c593baacc1f633ab55?rik=nZ5LW4CYsnI5uQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_9qZScR42z3g%2fTIkJStglTjI%2fAAAAAAAAJXY%2ftmexDGsJ_9M%2fs1600%2fordenadores.jpg&ehk=cVpSHbf59U575jmHWpKyz%2fE28IfjIjMy2xNr7K1wcfs%3d&risl=&pid=ImgRaw&r=0" alt="Imagen 2"> <img src="https://album.mediaset.es/eimg/2022/09/15/es-el-fin-de-las-tablets-asi-seran-los-ordenadores-en-10-anos_b07a.jpg" alt="Imagen 3"> <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/06/gamepc-1958821.jpg?itok=YmQ1y64H" alt="Imagen 4"> </div>
+               </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
